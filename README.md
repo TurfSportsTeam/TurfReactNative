@@ -56,3 +56,21 @@ There's a list of items to work on in the Trello board. Pick a color no one else
 
 There's also plenty of documentation about the app in the Google Drive folder
 
+#### iOS notes for Androidians:
+Cocoapods is kinda like Gradle in that it can add extra components from other developers. A better example is it's like npm install. So if you want to add Firebase to an iOS project:
+```
+cd ios/
+pod init      #do this once for your project
+nano Podfile
+```
+under `target '<YOUR PACKAGE>' do` add a line:
+```
+  pod 'Firebase/Core'
+```
+
+#### Android notes for iOS peeps:
+you may have to add packages to a Gradle file. Look for `build.gradle` in the android/app folder. You can add 'dependencies' (pods) under `dependencies {` ex.
+```
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+```
+
