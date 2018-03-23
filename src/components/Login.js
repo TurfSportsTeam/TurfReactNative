@@ -12,7 +12,7 @@ import * as firebase from "firebase";
 import Button from "apsl-react-native-button";
 import DismissKeyboard from "dismissKeyboard";
 import { GoogleSignin, GoogleSigninButton } from 'react-native-google-signin';
-import {AccessToken, LoginButton, LoginManager } from 'react-native-fbsdk';
+import FBSDK,{AccessToken, LoginButton, LoginManager } from 'react-native-fbsdk';
 /**********************************************************************************
 // Google SignIn Doc
 // https://github.com/devfd/react-native-google-signin

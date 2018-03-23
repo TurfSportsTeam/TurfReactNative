@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'TurfReactNative' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for TurfReactNative
+      pod 'Firebase/Core'
+      pod 'GoogleSignIn'
+      pod 'FBSDKLoginKit'
+
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'TurfReactNativeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'TurfReactNative-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for TurfReactNative-tvOS
+
+  target 'TurfReactNative-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
